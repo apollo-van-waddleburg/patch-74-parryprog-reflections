@@ -233,7 +233,7 @@ This run is amazing (this group does amazing work every tier), so I learned a lo
 I would also point to this fight for new speed teams to study, since you have two teams with different goals and circumstances 
 coming up with unique solutions. There's a lot to learn here!
 
-Also: Vamp Stomp was the most deadly mechanic for the team this whole tier. Take that as you will: seems like Europeans 
+Also, Vamp Stomp was the most deadly mechanic for the team this whole tier. Take that as you will: seems like Europeans 
 can't resist getting stepped on.
 
 ### M10S
