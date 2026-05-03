@@ -34,10 +34,10 @@ But then again, what about limit-breaks? How many do we think we can send?
 
 As a team, we would start to sheet iterations on this based on our best guesses. And this process is inherently cyclical: 
 as you continue to iterate on rotations or plan out better limit-break generation, you will continue to push the goal killtime 
-lower and lower. At some point, you are actually limited by time via how many loops of this cycle 
+lower and lower. At some point, you are actually limited by time via how many loops of this cycle you can sheet out 
 (or you hit some optimal plan given your goal). This gets even worse if you are working on multiple fights, 
-since time spent planning one fight is not spent on another. Once you realize this, you start to think about how efficient
-you can be in the planning phase.
+since time spent planning one fight is not spent on another. Once you realize this, you start to think about how to optimize
+the planning phase.
 
 ### The Sleeposim :tm:
 
@@ -45,7 +45,7 @@ To help our planning process, I wrote up a set of tools called the *Sleeposim*. 
 [xivintheshell](https://xivintheshell.com/) (a rotation planner) and [Ama's Combat Sim](https://pypi.org/project/ama-xiv-combat-sim/#description), allowing teams to easily
 submit rotations, track them, build full parties, run simulations, and track your favorites. Its main goal is to 
 help speed up the iteration process by allowing all members of the team to kick off their own simulations and experiments, 
-whereas in the past it was usually a bottleneck to have one person who could write some code run everything (if 
+whereas in the past it was usually a bottleneck, with most teams having only one person who could write code and run sims (if 
 they even had access to a sim).
 
 <p align="center">
@@ -116,7 +116,7 @@ Our time was beaten quite a bit by another team, *???*
 This fight is a lot different compared to the previous one since it does not die cleanly in a two-minute window. In these
 cases, you need to explore possibilities with delayed buffs. Delayed buffs can significantly improve the first window
 for some jobs: here are some examples.
-* BRD can use two codas for its first window if you delay at least to ~40s, and all three if you do 1:15.
+* BRD can use two codas for its first window if you delay at least to ~40s, and all three if you do ~1:15 or later.
 * MNK can use Phantom Rush in its first buff window if you delay to at least ~40s.
 * RPR can double enshroud the first window if you delay to at least ~40s.
 
@@ -163,8 +163,8 @@ Even the buff timings are pretty simple given that any delays would cause issues
 
 Included are some projected simulations for times if we ran a lot more limit-break in this fight. Using LB333 or 
 more could easily make this fight something like a 9:04 or faster, with maybe some additional optimizations getting 
-close to a sub-9m time. However, no team was able to spend the time on this, so 9:19 somehow stuck as the fastest time
-for this fight.
+close to a sub-9m time. However, no team was able to spend the time necessary to do this, so 9:19 stuck as the fastest time
+for this fight despite being very unoptimized.
 
 ### M9S
 
@@ -179,7 +179,7 @@ was plausible with two LB3s, so we committed to doing at least 7:05 and acceptin
 We also changed our process on this fight for theorycrafting. Normally, we would all agree on specific buff timings and 
 independently sheet, then sync and iterate on the team. This time around, I personally wrote 7/8 sheets for the initial 
 draft and wrote out the entirety of the add cleave plans to ensure we didn't have any miscommunications or unnecessary 
-losses to adds. We eventually were able to swap back to a team effort (the actual players handled followup drafts), 
+losses to adds. We eventually were able to swap back to a team effort (the actual players handled followup sheets), 
 but this change in process seemed to work out since we could have a centralized plan for adds.
 
 The other special thing we did on this fight was explore RPR, because we noticed a lot of good things about the job.
@@ -207,7 +207,8 @@ could have easily gotten to a 7:02, but we would have lost out on time for M10S.
 There was also some cleaving inefficiencies we needed to work out in instance and some decisions that were never 
 reassessed: the main one being the RPR rotation moving Plentiful Harvest to the end of the 4:40 window to snipe 
 the far tower add to ensure a kill. In practice, this actually wasn't that necessary and just having the BRD or someone 
-spot a gcd or two if we didn't crit much would have been fine. 
+spot a gcd or two if we didn't crit much could have been fine. That said, we did keep a lot of the "safety" cleave 
+to keep our consistency as high as possible.
 
 Now, the real big shocker on this fight was a Chinese team pulling off a 6:58 
 ([log](https://www.fflogs.com/reports/AqHm26khrWJRCvzx?fight=1&type=damage-done) and [VOD](https://www.fflogs.com/video/view/73/fight/147666431)).
@@ -226,6 +227,7 @@ points:
     * It also has its own complications, namely RNG on resource generation.
   * RPR can possibly work for this, but both is probably overkill and RPR would need to send more Whorls of Death for end on a shroud.
     * NIN also works better for this alignment, whereas we actually found RPR stronger than NIN on single-target for our buffs.
+    * RPR also can't double shroud the first buff window with their planned timings, which makes RPR a bit worse.
 * They utilized the fact that the first Nail add has about twice as much hp as the more urgent Tower adds, so they left the first one alive and killed it with the second set.
   * In contrast, we used the end of our 4:40 window to instantly nuke that nail add.
 
@@ -271,19 +273,18 @@ every session and our planning properly for a complete tier.
 
 ## Conclusions and Thoughts
 
-All in all, I felt this tier was very fun and rewarding. We did end up achieving all of our main goals and ended up 
+All in all, this tier was very fun and rewarding. We did end up achieving all of our main goals and ended up 
 with the overall best ASP for speeds. While I do think there's a lot less competition than in the past, the important 
 part for us was being able to find the right goals for our team, meet them, and still have some fun along the way. 
 
 I'd like to end this document with some advice to players who might be looking to start their own teams: you can 
 definitely gain a lot by utilizing the existing logs and public knowledge to practice in the downtime. While Evercold
-will change a lot of rotational optimization, Speeds is truly an exercise of time optimization: setting reasonable goals,
+will change a lot of rotational optimization, speeds is an exercise of time optimization: setting reasonable goals,
 supporting these goals with math and simulations, and playing well enough to reach them.
 
-More specifically, I feel like looking at both M9S and M10S would be really impactful since both have significant room 
-for improvement now that our runs are finished. There's a lot of interesting things you can already see in practice, 
-and maybe you can come up with some new ideas! And feel free to reach out if you would like ideas on what to do in 
-the downtime!
+More specifically, I feel like M9S and M10S would be great to study since there's a lot of theorycraft behind those 
+fights that you can see in practice with the completed runs. Maybe you can come up with some new ideas! 
+Feel free to reach out if you would like ideas on what to do in the downtime to practice!
 
 ### Random
 
