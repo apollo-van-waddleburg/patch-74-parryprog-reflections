@@ -273,7 +273,7 @@ every session and our planning properly for a complete tier.
 
 ## Conclusions and Thoughts
 
-All in all, this tier was very fun and rewarding. We did end up achieving all of our main goals and ended up 
+All in all, this tier was very fun and rewarding. We achieved all of our main goals and ended up 
 with the overall best ASP for speeds. While I do think there's a lot less competition than in the past, the important 
 part for us was being able to find the right goals for our team, meet them, and still have some fun along the way. 
 
